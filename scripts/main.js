@@ -100,10 +100,11 @@ function fillClock(){
 		document.getElementById("animate").style.color = "white";
 		
 		document.getElementById("foreground").style.backgroundImage = "url('images/water.png')";
-		document.getElementById("foreground").style.backgroundSize = "100%";
+		document.getElementById("foreground").style.backgroundSize = "200px 100px";
 		document.getElementById("demon").style.backgroundImage = "url('images/demon_cthulhu.png')";
+		document.getElementById("demon").style.backgroundSize = "185px 150px";
 		document.getElementById("demon").style.width = '200px';
-		document.getElementById("demon").style.height= '160px';
+		document.getElementById("demon").style.height= '150px';
 		document.getElementById("demon").style.bottom = '50px';
 	}
 	
