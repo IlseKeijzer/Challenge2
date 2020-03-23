@@ -86,8 +86,9 @@ function fillClock(){
 		
 		document.getElementById("foreground").style.backgroundImage = "url('images/grass_black.png')";
 		document.getElementById("demon").style.backgroundImage = "url('images/demon_evening.png')";
+		document.getElementById("demon").style.backgroundSize = "185px 170px";
 		document.getElementById("demon").style.width = '185px';
-		document.getElementById("demon").style.bottom = '40px';
+		document.getElementById("demon").style.bottom = '30px';
 	}
 
 	if(time['hours'] >= 0 && time['hours'] <= 6){
