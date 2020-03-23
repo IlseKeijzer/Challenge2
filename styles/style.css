@@ -70,8 +70,7 @@ h1{
 	z-index: -1;
 }
 .animated{
-	animation: 8s demon infinite cubic-bezier(0.33, 0.14, 0.03, 1);
-	animation-play-state: paused;
+	animation: 8s demon 1 cubic-bezier(0.33, 0.14, 0.03, 1);
 }
 
 @keyframes demon{

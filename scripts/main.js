@@ -68,7 +68,9 @@ function fillClock(){
 		
 		document.getElementById("foreground").style.backgroundImage = "url('images/clouds.png')";
 		document.getElementById("demon").style.backgroundImage = "url('images/demon_flying.png')";
+		document.getElementById("demon").style.backgroundSize = "185px 150px";
 		document.getElementById("demon").style.width = '185px';
+		document.getElementById("demon").style.bottom = '20px';
 	}
 
 	if(time['hours'] >= 18 && time['hours'] <= 24){
@@ -112,6 +114,7 @@ function fillClock(){
 }
 
 fillClock();
+setInterval(fillClock, 60000);
 
 var animate = document.getElementById('animate');
 var phrase = document.getElementById('alert');
@@ -134,6 +137,10 @@ phrase.onclick = function tellMeSomething(){
 var demon = document.getElementById('demon');
 
 animate.onclick = function callTheBeast(){
-	demon.style.animationPlayState = 'running';
+	//demon.style.animationPlayState = 'running';
+	//demon.addEventListener("animationiteration", AnimationListener, false);
+	demon.classList.remove("animated");
+	void demon.offsetWidth; // trigger a DOM reflow
+	demon.classList.add("animated");
 }
 
